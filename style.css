@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
 }
 
 main {
@@ -66,11 +67,20 @@ main {
         margin-top: 5%;
     }
 
+    .box1{
+        margin-right: 30px;
+    }
     .actionBox {
         display: flex;
         flex-direction: column;
         gap: 30px;
         min-width: 200px;
+    }
+
+
+    .lastBtn{
+        display: flex;
+        gap: 20px;
     }
 
     #voice, #fileUpload, button{
@@ -87,15 +97,21 @@ main {
     #voice{
         width: 100%;
     }
-
+    
     #voice:hover{
+        color: black;
+        border: 1px solid red;
+    }
+    
+    #fileUpload:hover, button:hover{
         color: red;
         border: 1px solid red;
     }
 
-    #fileUpload:hover, button:hover{
-        color: red;
-        border: 1px solid red;
+    .Remove{
+        appearance: none; /* Padrão moderno */
+        -webkit-appearance: none; /* Safari e Chrome */
+        -moz-appearance: none; /* Firefox */ 
     }
 }
 
