@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./img/abstract-digital-grid-black-background.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+    color: white;
+    gap: 20px;
+    text-align: center;
+
+    h1{
+        font-size: 45px;
+        font-weight: bold;
+    }
+    
+    span{
+        color: rgb(80, 80, 80);
+    }
+    
+    p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 70%;
+
+    textarea{
+        width: 70%;
+        border: none;
+        height: 125px;
+        border-radius: 5px;
+        font-size: 16px;
+        outline: none;
+        margin-bottom: 20px;
+        padding: 10px 0px 0px 10px;
+    }
+
+    input[type="file"]{
+        display: none;
+    }
+
+    .actions{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        margin-top: 5%;
+    }
+
+    .actionBox {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        min-width: 200px;
+    }
+
+    #voice, #fileUpload, button{
+        font-size: 20px;
+        padding: 10px 10px 15px;
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    #voice{
+        width: 100%;
+    }
+
+    #voice:hover{
+        color: red;
+        border: 1px solid red;
+    }
+
+    #fileUpload:hover, button:hover{
+        color: red;
+        border: 1px solid red;
+    }
+}
+
+
